@@ -12,6 +12,7 @@
 		4E4C141D2AE67FD0005FF54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4C141C2AE67FD0005FF54F /* Assets.xcassets */; };
 		4E4C14202AE67FD0005FF54F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4C141F2AE67FD0005FF54F /* Preview Assets.xcassets */; };
 		4E4C14272AE68047005FF54F /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C14262AE68047005FF54F /* Destination.swift */; };
+		4E4C14292AE688F1005FF54F /* EditDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C14282AE688F1005FF54F /* EditDestinationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4E4C141C2AE67FD0005FF54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E4C141F2AE67FD0005FF54F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E4C14262AE68047005FF54F /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		4E4C14282AE688F1005FF54F /* EditDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestinationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				4E4C141C2AE67FD0005FF54F /* Assets.xcassets */,
 				4E4C141E2AE67FD0005FF54F /* Preview Content */,
 				4E4C14262AE68047005FF54F /* Destination.swift */,
+				4E4C14282AE688F1005FF54F /* EditDestinationView.swift */,
 			);
 			path = SwiftyData;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				4E4C141B2AE67FCF005FF54F /* ContentView.swift in Sources */,
 				4E4C14192AE67FCF005FF54F /* SwiftyDataApp.swift in Sources */,
 				4E4C14272AE68047005FF54F /* Destination.swift in Sources */,
+				4E4C14292AE688F1005FF54F /* EditDestinationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
