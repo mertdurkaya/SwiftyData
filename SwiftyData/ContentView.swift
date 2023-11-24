@@ -13,12 +13,14 @@ struct ContentView: View {
     @Environment (\.modelContext) var modelContext
     @State private var path = [Destination]()
     @State private var sortOrder = SortDescriptor(\Destination.name)
+    @State private var searchText = ""
     
     var body: some View {
         NavigationStack(path: $path) {
-            DestinationListingView(sort: sortOrder)
+            DestinationListingView(sort: sortOrder, searchString: searchText)
             .navigationTitle("iTour")
             .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
+            .searchable(text: $searchText)
             .toolbar {
                 Button("Add Samples", systemImage: "bolt", action: addSamples)
                 Button("Add Destination", systemImage: "plus", action: addDestination)
@@ -39,13 +41,8 @@ struct ContentView: View {
     }
     
     func addSamples() {
-        let rome = Destination(name: "Rome", details: "Test details")
-        let florence = Destination(name: "Florence", priority: 1)
-        let naples = Destination(name: "Naples")
-        
+        let rome = Destination(name: "Rome", details: "Test details", priority: 1)
         modelContext.insert(rome)
-        modelContext.insert(florence)
-        modelContext.insert(naples)
     }
     
     func addDestination(){
@@ -53,8 +50,6 @@ struct ContentView: View {
         modelContext.insert(destination)
         path = [destination]
     }
-    
-
 }
 
 #Preview {
